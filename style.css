@@ -16,7 +16,7 @@ header {
 nav ul{
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     overflow-x: auto;
     scrollbar-width:none;
      justify-content: center;

@@ -8,3 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     }
   });
 });
+function contact(){
+  alert("Thank You For Contacting");
+}

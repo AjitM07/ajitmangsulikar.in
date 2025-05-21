@@ -348,7 +348,7 @@ nav ul li a:hover{
     gap: 2rem; 
     padding-bottom: 1rem;
     margin-right: 3rem;
-    margin-left:2rem;
+    margin-left:1rem;
 }
 .blog-post {
     flex: 0 0 360px;
@@ -358,7 +358,7 @@ nav ul li a:hover{
     color: #d0d0d0;
     text-align: justify;
     margin-right:4rem;
-    margin-left:2rem;
+    margin-left:1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 .blog-post:hover {

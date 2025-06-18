@@ -1,4 +1,8 @@
 @media(max-width:430px){
+    *{
+        transition:none;
+        transform:none;
+    }
     #sidebarToggle {
         visibility: visible;
     }
@@ -245,6 +249,10 @@ form button {
 
 
 @media(max-width:780px){
+    *{
+        transition:none;
+        transform:none;
+    }
     
 .logo {
     margin-top: 1rem;

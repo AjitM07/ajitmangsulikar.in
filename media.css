@@ -2,6 +2,8 @@
     *{
         transition:none;
         transform:none;
+        touch-action: manipulation;
+        user-select: none;
     }
     #sidebarToggle {
         visibility: visible;
@@ -252,6 +254,8 @@ form button {
     *{
         transition:none;
         transform:none;
+        touch-action: manipulation;
+        user-select: none;
     }
     
 .logo {

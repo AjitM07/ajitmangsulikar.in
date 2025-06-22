@@ -1,14 +1,14 @@
 *{
     scroll-behavior: smooth;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgba(255, 255, 255, 0.71);
+    color:rgba(255, 255, 255, 0.797);
 }
 
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(-45deg,#3a0000, #0f0c29,  #001f3f, #000000) no-repeat fixed;
-  background-size: 400% 400%;
+  background: linear-gradient(45deg,#000000,#153677, #391703, #000000) no-repeat fixed;
+  background-size: 150% 150%;
   animation: gradient 5s ease infinite;
 }
 @keyframes gradient {
@@ -63,6 +63,7 @@ ul a {
 }
 ul a:hover {
     letter-spacing: 0.2rem;
+    color: #ffffff;
     filter: drop-shadow(2px 2px 8px #84a8cc);
 }
 
@@ -70,8 +71,8 @@ ul a:hover {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    border: 2px solid #84a8cc;
-    background: #09090999;
+    border: 2px solid #c0d6ec;
+    background: #0909094f;
     padding: 5px 10px;
     cursor: pointer;
     z-index: 101;
@@ -83,12 +84,12 @@ ul a:hover {
 #sidebar {
     margin-top: 0.5rem;
     width: 0;
-    border: 2px solid #84a8cc;
+    border: 2px solid #c0d6ec;
     position: fixed;
     z-index: 100;
     top: 0;
     right: 0;
-    background:#09090999;
+    background:#0909094f;
     padding-top: 10px;
     padding-bottom: 10px;
     transition: 0.4s ease-in-out;
@@ -107,15 +108,15 @@ ul a:hover {
 
 #sidebar a:hover {
     background: #84a8cc7c;
-    border-left: 4px solid #84a8cc;  
+    border-left: 4px solid #c0d6ec;  
 }
 #sidebarToggle {
     visibility: hidden;
     position: fixed;
     top: 20px;
     right: 10px;
-    border: 2px solid #84a8cc;
-    background: #09090999;
+    border: 2px solid #c0d6ec;
+    background: #0909094f;
     padding: 5px 10px;
     cursor: pointer;
     z-index: 101;
@@ -125,7 +126,7 @@ ul a:hover {
 }
 
 #sidebarToggle:hover {
-    box-shadow: 2px 2px 8px #84a8cc; 
+    box-shadow: 2px 2px 8px #c0d6ec; 
 }
 
 .content{
@@ -141,17 +142,18 @@ ul a:hover {
     width: 500px;
     border-radius: 50%;
     margin-left: 8rem;
-    border: 2px solid #84a8cc;
+    border: 2px solid #c0d6ec;
     transition: 0.3s ease-in-out;
 }
 .hero img:hover{
     transform: scale(1.08);
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
 }
 
 .hero .iam{
+    font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
-    color:#888;
+    color:#a3a3a3;
     margin: 9rem 3rem 0rem 3rem;
     transition: 0.3s ease-in-out;
 }
@@ -163,13 +165,13 @@ ul a:hover {
     margin: 0rem 3rem;
     font-family:sans-serif;
     transition: 0.3s ease-in-out;
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
 }
 .hero .name:hover{
      transform: translateX(12px);
 }
 .hero .job{
-    color: #ffffff8a;
+    color: #d7d7d7;
     font-size: 2rem;
     margin: 0rem 3rem;
     margin-bottom: 1rem;
@@ -187,7 +189,7 @@ ul a:hover {
     display: inline-block;
     margin: 0rem 0.5rem 0rem 3rem;
     padding:1rem;
-    border: 2px solid #84a8cc;
+    border: 2px solid #c0d6ec;
     border-radius:20px;
     font-size: 1.3rem;
     text-decoration: none;
@@ -196,7 +198,7 @@ ul a:hover {
 }
 .btn:hover{
     transform:translateX(12px);
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
 }
 
 .handle1{
@@ -210,20 +212,20 @@ ul a:hover {
     margin-left: 3rem;
     margin-top: 1rem;
     transition: 0.3s ease-in-out;
-    color:#84a8cc;
+    color:#c5d7e9;
 }
 .handle i{
     margin-top: 1rem;
     transition: 0.3s ease-in-out;
-       color:#84a8cc;
+       color:#c5d7e9;
 }
 .handle i:hover{
     transform: translateX(12px);
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
   
 }
 .handle1 i:hover{
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
     transform:translateX(12px) ;
 }
 
@@ -239,14 +241,14 @@ ul a:hover {
     margin:auto;
     font-size: 1.2rem;
     text-align: justify;
-    border: 2px solid #84a8cc;
+    border: 2px solid #c0d6ec;
     border-radius:20px;
     padding:1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .About:hover{
     transform:scale(1.1);
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
     z-index: 2;
 }
 
@@ -267,7 +269,7 @@ ul a:hover {
 .project{
     font-size: 1.2rem;
     padding: 2rem;
-    border:2px solid #84a8cc;
+    border:2px solid #c0d6ec;
     border-radius: 20px;
     text-align: center;
     transition: 0.3s ease-in-out;
@@ -275,7 +277,7 @@ ul a:hover {
 }
 .project:hover{
     transform: scale(1.1);
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
     cursor: pointer;
     z-index: 2;
 }
@@ -292,7 +294,7 @@ ul a:hover {
     flex-direction: column;
     height:250px;
     overflow-y: auto;
-    border: 2px solid #84a8cc;
+    border: 2px solid #c0d6ec;
     border-radius:20px;
     padding:1.5rem;
     margin-left:3rem;
@@ -311,7 +313,7 @@ ul a:hover {
     color: #ffffff;
 }
 .place{
-    
+    color: #c0c0c0;
     margin-top:10px;
     font-size:1.2rem;
 
@@ -337,7 +339,7 @@ ul a:hover {
     width: 80%;
 }
 .skills-list li {
-    border: 2px solid #84a8cc;
+    border: 2px solid #c0d6ec;
     border-radius:20px;
     padding: 0.5rem 1rem;
     font-size:1.4rem;
@@ -346,7 +348,7 @@ ul a:hover {
 }
 .skills-list li:hover{
     transform: scale(1.1);
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
 }
 
 .certificatecontainer{
@@ -366,7 +368,7 @@ ul a:hover {
 .certification{
     font-size: 1.2rem;
     padding: 2rem;
-    border:2px solid #84a8cc;
+    border:2px solid #c0d6ec;
     border-radius: 20px;
     text-align: center;
     transition: 0.3s ease-in-out;
@@ -379,7 +381,7 @@ ul a:hover {
 }
 .certification:hover{
     transform: scale(1.1);
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
     cursor: pointer;
 }
 .blogcontainer{
@@ -399,14 +401,14 @@ ul a:hover {
 
     font-size: 1.2rem;
     padding: 2rem;
-    border:2px solid #84a8cc;
+    border:2px solid #c0d6ec;
     border-radius: 20px;
     text-align: justify;
     transition: 0.3s ease-in-out;
 }
 .blog-post:hover {
     transform:scale(1.05);
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
 }
 .blog-post h3 {
     color: #ffffff;
@@ -435,7 +437,7 @@ form input, form textarea {
     color: #ffffff;
     margin: 0.5rem 0;
     padding: 0.7rem;
-    border: 2px solid #84a8cc;
+    border: 2px solid #c0d6ec;
     border-radius:20px;
     font-size: 1rem;
     border: none;
@@ -443,20 +445,20 @@ form input, form textarea {
   
 }
 .contactme{
-    border: 2px solid #84a8cc;
+    border: 2px solid #c0d6ec;
     border-radius:20px;
     transition: transform 0.5s ease, box-shadow 0.3s ease;
     margin-bottom: 1rem;
 }
 .contactme:hover{
     transform: scale(1.015);
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
 }
 form button {
     color: #ffffff;
     padding: 1rem;
     margin:1.5rem;
-    border: 2px solid #84a8cc;
+    border: 2px solid #c0d6ec;
     border-radius:20px;
     background: none;
     cursor: pointer;
@@ -468,7 +470,7 @@ form button {
 }
 form button:hover{
     transform:scale(1.1);
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
 }
 
 .footer {
@@ -512,7 +514,7 @@ form button:hover{
     font-size:1.5rem;
     text-align:center;
     padding:0 15px 15px;
-    border: 2px solid #84a8cc;
+    border: 2px solid #c0d6ec;
     visibility:hidden;
     transition:transform 0.4s, top 0.4s;
 }
@@ -526,7 +528,7 @@ form button:hover{
     font-size: 100px;
     margin-top: -50px;
     margin-bottom: 20px;
-    filter: drop-shadow(2px 2px 8px #84a8cc);
+    filter: drop-shadow(2px 2px 8px #c0d6ec);
 }
 .popup .btn{
     padding: 0.5rem;

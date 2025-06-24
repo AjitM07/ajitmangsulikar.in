@@ -284,10 +284,12 @@ ul a:hover {
 .project a u{
     text-align: center;
     color:#e62525;
+    text-decoration:none;
 }
-.project a u #git{
+.project a #git u{
     text-align: center;
     color:#2ea44f;
+    text-decoration:none;
 }
 
 .expcontainter{

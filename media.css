@@ -97,7 +97,8 @@
 .project{
     font-size: 1rem;
     margin-bottom: 1rem;
-    height: 130px;
+    height: 160px;
+   width:50%;
     transition: none;
     transform: none;
 }

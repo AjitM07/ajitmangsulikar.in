@@ -285,7 +285,10 @@ ul a:hover {
     text-align: center;
     color:#e62525;
 }
-
+.project a u #git{
+    text-align: center;
+    color:#2ea44f;
+}
 
 .expcontainter{
     width:80%;
@@ -376,8 +379,8 @@ ul a:hover {
 .certification a{
     font-size: 1.3rem;
     align-self: center;
-    text-decoration:underline;
-    color:#e62525;
+    text-decoration:none;
+    color:#fff;
 }
 .certification:hover{
     transform: scale(1.1);

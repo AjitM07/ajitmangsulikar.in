@@ -379,8 +379,8 @@ ul a:hover {
 .certification a{
     font-size: 1.3rem;
     align-self: center;
+    color:#e62525;
     text-decoration:none;
-    color:#fff;
 }
 .certification:hover{
     transform: scale(1.1);

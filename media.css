@@ -1,75 +1,71 @@
 @media(max-width:430px){
-    *{
-        transition:none;
-        transform:none;
-        touch-action: manipulation;
-        user-select: none;
-    }
-    #sidebarToggle {
-        visibility: visible;
-    }
-    header{
-        display: none;
-    }
-    .hero{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
+
+@media (hover: none) and (pointer: coarse) {
+   .project:hover, .hero img:hover, .skills-list li:hover,
+   .certification:hover, .blog-post:hover, .hero .name:hover, 
+   .btn:hover, .handle1 i:hover, .handle i:hover{
+    transform: none;
+  }
+}
+*{
+    touch-action: manipulation;
+    user-select: none;
+}
+#sidebarToggle {
+    visibility: visible;
+}
+header{
+    display: none;
+}
+.hero{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
 .hero img{
     margin: 2rem 2rem 0rem 1rem;
-    width: 250px;
+    width: 300px;
     margin-left: 2rem;
 }
 
 .hero .iam{
-    font-size: 0.8rem;
-    margin: 2rem 3rem 0rem 3rem;
-    transition: none;
-    transform: none;
+    font-size: 1rem;
+    margin: 2.5rem 3rem 0rem 3rem;
 }
 .hero .name{
     font-size: 1.5rem;
     margin: 0rem 3rem;
-    transition: none;
-    transform: none;
 }
 .hero .job{
     font-size: 1rem;
     margin-left: 3rem;
-    transition: none;
-    transform: none;
-
+    margin-bottom: 0rem;
 }
 .handle i{
     font-size: 1.5rem;
-    justify-content: space-evenly;
+    margin-left: 1.1rem;
     margin-top: 1rem;
-    transition: none;
-    transform: none;
+    user-select: none;
 }
 .handle1 i{
    font-size: 1.5rem;
    margin-left: 3rem;
    justify-content: space-evenly;
    transition: none;
-    transform: none;
+   transform: none;
 }
 
 .btn{
-    width: 140px;
+    color: #ffffff;
+    width: 190px;
     margin:1rem 1rem 0rem 2rem;
     font-size: 1rem;
     display: inline-block;
     padding:0.6rem 3rem;
-    border: 2px solid #84a8cc;
     border-radius:20px;
     text-align: center;
     text-decoration: none;
     margin-right:2rem;
-    transition: transform 0.3s ease-in-out;
-    filter: drop-shadow(2px 2px 8px #84a8cc);
 }
 .tags{
     justify-items: center;
@@ -80,12 +76,10 @@
     align-self: center;
     justify-content: center;
     width:80%;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: justify;
-    border: 2px solid #84a8cc;
-    border-radius:20px;
     padding:1rem;
-    transition: none;
+    color: #ffffff;
 }
 
 .projectcontainer{
@@ -94,7 +88,9 @@
     overflow-x: auto;
     gap:3rem;
 }
+
 .project{
+    color: #ffffff;
     font-size: 1rem;
     margin-bottom: 1rem;
     height: 180px;
@@ -118,28 +114,29 @@
     width:5px;
 }
 .expcontainter::-webkit-scrollbar-thumb {
-    background: #2cb6ed99; 
     border-radius: 3px ;
 }
 .post{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .place{
     margin-top:10px;
-    font-size:0.7rem;
-    margin-bottom:0.5rem;
+    font-size:0.8rem;
+    color: #ffffff;
 }
 .tenure{
     margin-bottom: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color:#ffffff95;
 }
 .exp{
-    font-size:0.8rem;
+    color: #ffffff;
+    font-size:0.9rem;
     text-align:justify;
     margin-bottom: 3rem;
 }
 .skills-list li {
+    color: #ffffff;
     font-size:1rem;
     transition: none;
 }
@@ -152,18 +149,16 @@
     margin-bottom: 1rem;
     padding: 1.5rem;
     transition: none;
-    transform: none;
-    
+    transform: none;  
 }
 .certification a{
     font-size: 1rem;
 }
 .blogcontainer{
-
     width: 90%;
     display:grid;
     overflow-x: auto;
-    gap:2rem;
+    gap:1rem;
 }
 .blog-post {
     transition: none;
@@ -173,14 +168,15 @@
 }
 .blog-post h3 {
     margin-top: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .blog-date {
-    color: #888;
+    color: #9b9b9b;
     font-size: 0.85rem;
     margin-bottom: 1rem;
 }
 .blog-summary {
+    color: #ffffff;
     line-height: 1.6;
     font-size: 0.8rem;
 }
@@ -196,7 +192,6 @@ form input, form textarea {
   
 }
 .contactme{
-    border: 1px solid #84a8cc;
     margin-bottom: 0.2rem;
     transition: none;
     transform: none;
@@ -204,8 +199,8 @@ form input, form textarea {
 form button {
     padding: 0.5rem;
     margin:1rem;
-    width: 5rem;
-    font-size: 0.8rem;
+    width: 8rem;
+    font-size: 1.2rem;
 }
 .footer {
     flex-direction: column;
@@ -218,7 +213,7 @@ form button {
 }
 .footer a i{
     font-size: 25px;
-    margin-right: 1rem;
+    margin-right: 1.2rem;
 }
 
 .footer-bottom {
@@ -249,48 +244,246 @@ form button {
 }
 
 
-
-
+/*
 @media(max-width:780px){
-    *{
-        transition:none;
-        transform:none;
-        touch-action: manipulation;
-        user-select: none;
-    }
     
-.logo {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color:#ffffff;
-    padding:0.5rem;
+@media (hover: none) and (pointer: coarse) {
+   .project:hover,.hero .name:hover, .btn:hover, .hero img:hover,
+   .handle1:hover, .handle:hover, .skills-list li:hover,
+   .certification:hover, .blog-post:hover{
+    transform: none;
+  }
 }
-.logo i{
+
+*{
+    touch-action: manipulation;
+    user-select: none;
+}
+#sidebarToggle {
+    visibility: visible;
+    font-size: 2rem;
+}
+header{
+    display: none;
+}
+.hero{
+    flex-direction: column;
+
+    align-items: center;
+    align-content: center;
+} 
+.hero img{
+    margin: 2rem 2rem 0rem 1rem;
+    width: 500px;
+    margin-left: 2rem;
+}
+
+.hero .iam{
+    font-size: 2rem;
+    margin: 2rem 3rem 0rem 3rem;
+}
+.hero .name{
+    font-size: 3rem;
+    margin: 0rem 3rem;
+}
+.hero .job{
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-bottom: 0rem;
+}
+.handle i{
+    font-size: 2rem;
+    margin-left: 1.1rem;
+    margin-top: 1rem;
+    user-select: none;
+}
+.handle1 i{
+   font-size: 2rem;
+   margin-left: 3rem;
+   justify-content: space-evenly;
+   transition: none;
+   transform: none;
+}
+
+.btn{
+    color: #ffffff;
+    width: 220px;
+    margin:1rem 1rem 0rem 2rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding:0.6rem 3rem;
+    border-radius:20px;
+    text-align: center;
+    text-decoration: none;
+    margin-right:2rem;
+}
+.tags{
+    justify-items: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.About{
+    align-self: center;
+    justify-content: center;
+    width:80%;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding:1rem;
+    color: #ffffff;
+}
+
+.projectcontainer{
+    width: 80%;
+    display: flex;
+    overflow-x: auto;
+    gap:3rem;
+}
+
+.project{
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.project a{
+      text-decoration:none;
+}
+.expcontainter{
+    width:80%;
+    justify-self: center;
+    display:flex;
+    flex-direction: column;
+    height:300px;
+    border-radius:20px;
+    padding:1rem;
+   
+}
+.expcontainter::-webkit-scrollbar{
+    width:5px;
+}
+.expcontainter::-webkit-scrollbar-thumb {
+    border-radius: 3px ;
+}
+.post{
+    font-size: 1.5rem;
+}
+.place{
+    margin-top:10px;
+    font-size:1.1rem;
+    color: #ffffff;
+}
+.tenure{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color:#ffffff95;
+}
+.exp{
+    color: #ffffff;
+    font-size:1.2rem;
+    text-align:justify;
+    margin-bottom: 3rem;
+}
+.skills-list li {
+    color: #ffffff;
+    font-size:1rem;
+    font-size: 1.3rem;
+}
+.certificatecontainer{
+    display: grid;
+    gap: 3rem;
+}
+.certification{
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+}
+.certification a{
+    font-size: 1.4rem;
+}
+.blogcontainer{
+    width: 90%;
+    display:grid;
+    overflow-x: auto;
+    gap:1rem;
+}
+.blog-post {
+    transition: none;
+    transform: none;
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+.blog-post h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+.blog-date {
+    color: #9b9b9b;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+.blog-summary {
+    color: #ffffff;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+form {
+    width: 80%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 3rem 1.5rem 3rem;
+}
+form input, form textarea {
+    font-size: 0.8rem;
+  
+}
+.contactme{
+    margin-bottom: 0.2rem;
+    transition: none;
+    transform: none;
+}
+form button {
+    padding: 0.5rem;
+    margin:1rem;
+    width: 8rem;
+    font-size: 1.2rem;
+}
+.footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px 0 5px;
+}
+
+.footer h3 {
+  font-size: 15px;
+}
+.footer a i{
+    font-size: 25px;
+    margin-right: 1.2rem;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 10px;
+  color: #888;
+}
+
+#goTop{
     display: none;
 }
 
-ul a {
-    text-decoration: none;
-    transition: color 0.3s;
-    font-size:1rem;
-    background:none;
-    padding: 0.7rem;
-    padding-left: 1rem;
-    border-radius: 20px;
-    transition:0.3s ease-in-out;
-    letter-spacing: 0.1rem;
+.popup i{
+    font-size: 6rem;
+    margin-top: -40px;
 }
+  .popup{
+    width:400px;
+    font-size: 1.5rem;
+  }
+  .popup .btn{
+    margin-top: 20px;
+  }
+  .button{
+    font-size: 1.5rem;
+  }
 
-
-.hero{
-    flex-direction: column;
-}
-
-.hero img{
-    margin-top: 1.5rem;
-}
-.hero .iam{
-    margin-top: 4rem;
-}
-    
-}
+} 
+*/

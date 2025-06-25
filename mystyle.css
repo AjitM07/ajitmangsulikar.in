@@ -1,21 +1,21 @@
 *{
     scroll-behavior: smooth;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgba(255, 255, 255, 0.797);
+    color:#c9d1d9dc;
 }
 
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(45deg,#000000,#153677, #391703, #000000) no-repeat fixed;
+  background: #0d1117;
   background-size: 150% 150%;
   animation: gradient 5s ease infinite;
 }
-@keyframes gradient {
+/* @keyframes gradient {
   0% {background-position: 0% 50%;}
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
-}
+} */
 header {
     padding: 1rem 0;
     display: flex;
@@ -26,6 +26,7 @@ header {
     padding: 0 30px;
 }
 .logo i{
+    color: #2ea043;
     margin-right: 1rem;
     margin-left: 1rem;
 }
@@ -41,7 +42,6 @@ header {
 }
 .logo:hover{
     letter-spacing: 0.3rem;
-    filter: drop-shadow(2px 2px 8px #84a8cc);
 }
 ul {
     list-style: none;
@@ -56,6 +56,7 @@ ul a {
     font-size:1.2rem;
     background:none;
     padding: 0.7rem;
+    color:#58a6ff;;
     padding-left: 1rem;
     border-radius: 20px;
     transition:0.3s ease-in-out;
@@ -63,16 +64,14 @@ ul a {
 }
 ul a:hover {
     letter-spacing: 0.2rem;
-    color: #ffffff;
-    filter: drop-shadow(2px 2px 8px #84a8cc);
 }
 
 #goTop{
     position: fixed;
     bottom: 20px;
     left: 20px;
-    border: 2px solid #c0d6ec;
-    background: #0909094f;
+    border: 2px solid #2ea043;
+    background: #0d1117;
     padding: 5px 10px;
     cursor: pointer;
     z-index: 101;
@@ -84,49 +83,40 @@ ul a:hover {
 #sidebar {
     margin-top: 0.5rem;
     width: 0;
-    border: 2px solid #c0d6ec;
+    border: 2px solid #2ea043;
     position: fixed;
     z-index: 100;
     top: 0;
     right: 0;
-    background:#0909094f;
+    background:#090909bf;
     padding-top: 10px;
     padding-bottom: 10px;
     transition: 0.4s ease-in-out;
     border-radius: 20px;
     margin-right: -40px;
-
 }
 #sidebar a {
     padding: 5px 20px;
     margin: 10px;
+    color: #ffffff;
     text-decoration: none;
     font-size: 20px;
     display: block;
-    transition: color 0.3s;
-}
-
-#sidebar a:hover {
-    background: #84a8cc7c;
-    border-left: 4px solid #c0d6ec;  
 }
 #sidebarToggle {
     visibility: hidden;
     position: fixed;
     top: 20px;
-    right: 10px;
-    border: 2px solid #c0d6ec;
-    background: #0909094f;
+    right: 20px;
+    border: 2px solid #2ea043;
+    background: #0d1117;
+    color: #58a6ff;
     padding: 5px 10px;
     cursor: pointer;
-    z-index: 101;
+    z-index: 104;
     border-radius: 8px;
     font-size: 25px;
     margin-bottom: 1rem;
-}
-
-#sidebarToggle:hover {
-    box-shadow: 2px 2px 8px #c0d6ec; 
 }
 
 .content{
@@ -142,33 +132,29 @@ ul a:hover {
     width: 500px;
     border-radius: 50%;
     margin-left: 8rem;
-    border: 2px solid #c0d6ec;
+    border: 2px solid #fff;
     transition: 0.3s ease-in-out;
 }
 .hero img:hover{
-    transform: scale(1.08);
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
+    transform: scale(1.07);
+    filter: drop-shadow(0px 0px 8px #fff);
 }
 
 .hero .iam{
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
     color:#a3a3a3;
-    margin: 9rem 3rem 0rem 3rem;
+    margin: 7rem 3rem 0rem 3rem;
     transition: 0.3s ease-in-out;
 }
-.hero .iam:hover{
-    transform: translateX(12px);
-}
+
 .hero .name{
+      color: #ffffff;
     font-size: 4rem;
     margin: 0rem 3rem;
     font-family:sans-serif;
     transition: 0.3s ease-in-out;
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
-}
-.hero .name:hover{
-     transform: translateX(12px);
+    /* filter: drop-shadow(1px 1px 2px #58a6ff); */
 }
 .hero .job{
     color: #d7d7d7;
@@ -180,25 +166,24 @@ ul a:hover {
     font-weight: 100;
     transition: 0.3s ease-in-out;
 }
-.hero .job:hover{
-    transform: translateX(12px);
-}
+
 
 .btn{
+    color: #ffffff;
+    letter-spacing: 0.01rem;
     font-size: 1rem;
     display: inline-block;
-    margin: 0rem 0.5rem 0rem 3rem;
+    margin: 0rem 0.5rem 1rem 3rem;
     padding:1rem;
-    border: 2px solid #c0d6ec;
+    border: 2px solid #2ea043;
     border-radius:20px;
     font-size: 1.3rem;
     text-decoration: none;
     margin-right:2rem;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    transition:0.3s ease-in-out;
 }
 .btn:hover{
-    transform:translateX(12px);
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
+    filter: drop-shadow(2px 2px 8px #2ea043);
 }
 
 .handle1{
@@ -212,26 +197,27 @@ ul a:hover {
     margin-left: 3rem;
     margin-top: 1rem;
     transition: 0.3s ease-in-out;
-    color:#c5d7e9;
+    color:#58a6ff;
 }
 .handle i{
     margin-top: 1rem;
     transition: 0.3s ease-in-out;
-       color:#c5d7e9;
+    color:#58a6ff;
 }
 .handle i:hover{
     transform: translateX(12px);
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
+    /* filter: drop-shadow(2px 2px 8px #c0d6ec); */
   
 }
 .handle1 i:hover{
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
+    /* filter: drop-shadow(2px 2px 8px #c0d6ec); */
     transform:translateX(12px) ;
 }
 
 .tags{
     text-align: center;
     color: #ffffff;
+    font-size: 2rem;
 
 }
 .About{
@@ -239,16 +225,16 @@ ul a:hover {
     justify-content: center;
     width:80%;
     margin:auto;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: justify;
-    border: 2px solid #c0d6ec;
+    border: 2px solid #2ea043;
     border-radius:20px;
     padding:1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .About:hover{
-    transform:scale(1.1);
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
+       box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+    color: #ffffff;
     z-index: 2;
 }
 
@@ -263,31 +249,32 @@ ul a:hover {
     height:5px;
 }
 .projectcontainer::-webkit-scrollbar-thumb {
-    background:  #2cb6ed99; 
+    background:  #2ea04396; 
     border-radius: 3px;
 }
 .project{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 2rem;
-    border:2px solid #c0d6ec;
+    border:2px solid #2ea043;
     border-radius: 20px;
     text-align: center;
     transition: 0.3s ease-in-out;
-
 }
+
 .project:hover{
+    color: #fff;
     transform: scale(1.1);
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
     cursor: pointer;
     z-index: 2;
 }
 .project a{
     text-align: center;
-    color:#e62525;
+    color:#58a6ff;
     text-decoration:none;
 }
 #git{
-    color:#2ea44f;
+    color:#34b84c;
 }
 
 .expcontainter{
@@ -297,19 +284,23 @@ ul a:hover {
     flex-direction: column;
     height:250px;
     overflow-y: auto;
-    border: 2px solid #c0d6ec;
+    border: 2px solid #2ea043;
     border-radius:20px;
     padding:1.5rem;
     margin-left:3rem;
     margin-right: 3rem;
     margin-top: 3rem;
 }
+.expcontainter:hover{
+    color: #fff;
+}
 .expcontainter::-webkit-scrollbar{
     width:5px;
+    
 }
 .expcontainter::-webkit-scrollbar-thumb {
-    background: #2cb6ed99; 
-    border-radius: 3px ;
+    background: #2ea04396; 
+    border-radius: 4px;
 }
 .post{
     font-size: 1.7rem;
@@ -321,6 +312,10 @@ ul a:hover {
     font-size:1.2rem;
 
 }
+.place a{
+    color: #58a6ff;
+    text-decoration: none;
+}
 .tenure{
     margin-bottom: 1rem;
     color: #ffffff;
@@ -329,6 +324,9 @@ ul a:hover {
     font-size:1.2rem;
     text-align:justify;
     margin-bottom: 3rem;
+}
+.exp:hover{
+    color: #ffffff;
 }
 
 
@@ -342,16 +340,18 @@ ul a:hover {
     width: 80%;
 }
 .skills-list li {
-    border: 2px solid #c0d6ec;
+    border: 2px solid #2ea043;
     border-radius:20px;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
     font-size:1.4rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-right: 2rem;
 }
 .skills-list li:hover{
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
     transform: scale(1.1);
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
+    color: #ffffff;
+    /* filter: drop-shadow(2px 2px 8px #c0d6ec); */
 }
 
 .certificatecontainer{
@@ -365,13 +365,13 @@ ul a:hover {
     height:5px;
 }
 .certificatecontainer::-webkit-scrollbar-thumb{
-    background: #2cb6ed99; 
+    background: #2ea04396; 
     border-radius: 3px ;
 }
 .certification{
     font-size: 1.2rem;
     padding: 2rem;
-    border:2px solid #c0d6ec;
+    border:2px solid #2ea043;
     border-radius: 20px;
     text-align: center;
     transition: 0.3s ease-in-out;
@@ -379,41 +379,32 @@ ul a:hover {
 .certification a{
     font-size: 1.3rem;
     align-self: center;
-    color:#e62525;
+    color:#58a6ff;
     text-decoration:none;
 }
 .certification:hover{
     transform: scale(1.1);
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
     cursor: pointer;
 }
+
+
 .blogcontainer{
     justify-self: center;
     width: 80%;
     display: grid;
     gap:2rem;
 }
-.blogcontainer::-webkit-scrollbar{
-    height: 5px;
-}
-.blogcontainer::-webkit-scrollbar-thumb{
-    background: #2cb6ed99; 
-    border-radius: 3px ;
-}
 .blog-post {
-
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 2rem;
-    border:2px solid #c0d6ec;
+    border:2px solid #2ea043;
     border-radius: 20px;
     text-align: justify;
     transition: 0.3s ease-in-out;
 }
-.blog-post:hover {
-    transform:scale(1.05);
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
-}
 .blog-post h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
     margin-top: 0;
     font-size: 1.3rem;
@@ -426,6 +417,12 @@ ul a:hover {
 .blog-summary {
     line-height: 1.6;
     font-size: 1rem;
+}
+.blog-summary:hover{
+    color: #ffffff;
+}
+.blog-post:hover{
+       box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
 }
 
 
@@ -440,7 +437,6 @@ form input, form textarea {
     color: #ffffff;
     margin: 0.5rem 0;
     padding: 0.7rem;
-    border: 2px solid #c0d6ec;
     border-radius:20px;
     font-size: 1rem;
     border: none;
@@ -448,32 +444,32 @@ form input, form textarea {
   
 }
 .contactme{
-    border: 2px solid #c0d6ec;
+    border: 2px solid #2ea043;
     border-radius:20px;
     transition: transform 0.5s ease, box-shadow 0.3s ease;
     margin-bottom: 1rem;
 }
 .contactme:hover{
     transform: scale(1.015);
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
 }
 form button {
-    color: #ffffff;
     padding: 1rem;
     margin:1.5rem;
-    border: 2px solid #c0d6ec;
+    border: 2px solid #58a6ff;
     border-radius:20px;
     background: none;
     cursor: pointer;
     width:10rem;
     align-self: center;
     margin-bottom:8rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 form button:hover{
+    color: #ffffff;
     transform:scale(1.1);
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
 }
 
 .footer {
@@ -493,8 +489,12 @@ form button:hover{
   
 }
 .footer a i{
-    font-size: 20px;
+    font-size: 30px;
     margin-right: 1.5rem;
+}
+.footer a i:hover{
+    color: #58a6ff;
+    transform: scale(1.1);
 }
 
 .footer-bottom {
@@ -505,10 +505,8 @@ form button:hover{
 .popup{
     z-index: 100;
     width:350px;
-    background: linear-gradient(-45deg,#3a0000, #0f0c29,  #001f3f, #000000) no-repeat fixed;
-    animation: gradient 5s ease infinite;
+    background: #0d1117;
     border-radius:30px;
-    opacity:1;
     position: fixed;
     top:0;
     left:50%;
@@ -517,11 +515,13 @@ form button:hover{
     font-size:1.5rem;
     text-align:center;
     padding:0 15px 15px;
-    border: 2px solid #c0d6ec;
+    border: 3px solid #58a6ff;
     visibility:hidden;
     transition:transform 0.4s, top 0.4s;
 }
-
+.thankyou{
+    color: #ffffff;
+}
 .open-popup{
     top:50%;
     visibility: visible;
@@ -531,15 +531,15 @@ form button:hover{
     font-size: 100px;
     margin-top: -50px;
     margin-bottom: 20px;
-    filter: drop-shadow(2px 2px 8px #c0d6ec);
 }
-.popup .btn{
+.popup .thankyoubtn{
     padding: 0.5rem;
     margin-top: 2rem;
-    margin-left: 1.5rem;
+    margin-left: 0rem;
     border-radius: 20px;
-    background: #fff;
-    color:#000000;
+    background: #0d1117;
+    border: 3px solid #2ea043;
+    color:#ffffff;
     cursor: pointer;
     font-size:1.2rem;
     transition: 0.3s ease-in-out;

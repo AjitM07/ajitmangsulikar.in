@@ -14,12 +14,12 @@ Welcome to the GitHub repository of my personal portfolio website! This site sho
 - Clean HTML, CSS, and JavaScript codebase
 
 ## 📁 Folder Structure
-portfolio/
-├── assets/ # Images, icons, fonts
-├── css/ # Custom styles
-├── js/ # JavaScript files
-├── index.html # Main entry point
-└── README.md # Project documentation
+portfolio/ <br>
+├── assets/ # Images, icons, fonts <br>
+├── css/ # Custom styles <br>
+├── js/ # JavaScript files<br>
+├── index.html # Main entry point<br>
+└── README.md # Project documentation<br>
 
 ## 🛠️ Tech Stack
 

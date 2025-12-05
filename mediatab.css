@@ -1,0 +1,128 @@
+
+@media(min-width:440px) and (max-width:780px){
+ 
+@media (hover: none) and (pointer: coarse) {
+
+    .project:hover,
+    .projectcard .hero img:hover,
+    .skills-list li:hover,
+    .certification:hover,
+    .blog-post:hover,
+    .hero .name:hover,
+    .btn:hover,
+    .handle1 i:hover,
+    .handle i:hover {
+      transform: none;
+      transition: none;
+      user-select: none;
+    }
+  }
+
+  *{
+    touch-action: manipulation;
+    user-select: none;
+  }
+
+  #sidebarToggle {
+    visibility: visible;
+  }
+
+  #sidebar {
+  margin-top: 2rem;
+  border: 1px solid #6bb9ff;
+  transition: 0.4s ease-in-out;
+  border-radius: 20px;
+  margin-right: -40px;
+}
+
+#sidebar a {
+  padding-left:1rem; 
+  padding-right:4rem;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+}
+
+  /*header*/
+  header {
+    display: none;
+  }
+
+  /*Header Section*/
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero img {
+    margin: 2rem 2rem 0rem 1rem;
+    width: 500px;
+    margin-left: 2rem;
+  }
+
+  .hero .intro {
+    text-align: center;
+  }
+
+  .hero .iam {
+    font-size: 2rem;
+    margin: 2.5rem 3rem 0.5rem 3rem;
+  }
+
+  .hero .name {
+    font-size: 3rem;
+  }
+
+  .hero .job {
+    font-size: 1.6rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .handles {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .handle i {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    transition: 0.3s ease-in-out;
+  }
+
+  .resumebtn {
+    width: 50%;
+    margin: 1rem 1rem 0rem 2rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 2rem;
+  }
+
+  .tags {
+    justify-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+   .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  .skills-list .skill_logo {
+    transition: none;
+    transform: none;
+    height: 2rem;
+    width: 2rem;
+  }
+
+} 

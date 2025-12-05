@@ -7,6 +7,7 @@
     <title>Ajit's Portfolio</title>
     <link rel="stylesheet" href="mystyle.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="mediatab.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -46,7 +47,11 @@
     </header>
     <br><br>
 
+
+    
     <main class="content">
+
+        <!--Hero section-->
         <section class="hero" id="hero">
             <div class="img">
                 <img src="ajit.png" alt="ajit">
@@ -54,21 +59,24 @@
             <div class="intro">
                 <p class="iam">Hello! I am</p>
                 <h1 class="name">AJIT MANGSULIKAR</h1>
-                <h2 class="job">SY CSE Undergraduate</h2>
-                <a href="resume-ajit.pdf" target="_main" class="btn" download>Download Resume</a><br>
-                <span class="handle1"><a href="https://www.linkedin.com/in/ajit-mangsulikar-504775335/"
-                        target="_main"><i class="fab fa-linkedin-in"></i></a></span>
-                <span class="handle"><a href="https://github.com/AjitM07" target="_main"><i
-                            class="fab fa-github"></i></a></span>
-                <span class="handle"><a href="https://www.instagram.com/ajit__m07/?__pwa=1" target="_main"><i
-                            class="fab fa-instagram"></i></a></span>
-                <span class="handle"><a href="https://mailto:ajitmangsulikar123@gmail.com" target="_main"><i
-                            class="fa-solid fa-envelope"></i></i></a></span>
+                <h2 class="job">SY Computer Science Engineering Undergraduate</h2>
+                <a href="resume-ajit.pdf" target="_main" class="resumebtn" download>Download Resume</a><br>
+                <div class="handles">
+                    <div class="handle"><a href="https://www.linkedin.com/in/ajit-mangsulikar-504775335/"
+                            target="_main"><i class="fab fa-linkedin-in"></i></a></div>
+                    <div class="handle"><a href="https://github.com/AjitM07" target="_main"><i
+                                class="fab fa-github"></i></a></div>
+                    <div class="handle"><a href="https://www.instagram.com/ajit_m_07/" target="_main"><i
+                                class="fab fa-instagram"></i></a></div>
+                    <div class="handle"><a href="https://mailto:ajitmangsulikar123@gmail.com" target="_main"><i
+                                class="fa-solid fa-envelope"></i></i></a></div>
+                </div>
             </div>
         </section>
-        <br><br><br><br><br><br>
-        <hr><br>
+        <br><br><br><br>
 
+
+        <!--About Me section-->
         <section class="aboutme" id="aboutme">
             <h2 class="tags">About Me</h2>
             <p class="About"> I'm a second-year Computer Science Engineering student at Walchand College of Engineering,
@@ -81,53 +89,96 @@
 
         <br><br>
 
+        <!--Projects section-->
         <section class="projects" id="projects">
             <h2 class="tags">Projects</h2>
+
             <div class="projectcontainer">
-                <div class="project" id="port">My Portfolio<br><br>
-                    <a href="index.html">Visit Portfolio</a>
+
+                <div class="projectcard"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('portfolioImg.png');">
+                    <section class="projectheader">My Portfolio</section>
+                    <section class="github_link"><a href="#" target="_main">-</a></section>
+                    <section class="live_link"><a href="index.html" target="_main">Visit My Portfolio <i
+                                class="fa-solid fa-up-right-from-square"></i></a></section>
+                    <section class="projectInfo">This responsive, framework-free portfolio uses pure HTML and CSS to
+                        transition from a desktop grid to a mobile horizontal scroll, optimizing the presentation of
+                        technical projects on any device.</section>
                 </div>
-                <div class="project">Weather Prediction Using Python<br><br>
-                    <a href="https://github.com/AjitM07/weather_pred_python.git/" target="_main" id="git">Visit
-                        Github</a>
+                <div class="projectcard"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('connect4sc.png');">
+                    <section class="projectheader">Connect 4 - Board Game</section>
+                    <section class="github_link"><a href="https://github.com/AjitM07/connect4.gg.git"
+                            target="_main">View Github Repository <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </section>
+                    <section class="live_link"><a href="https://ajitm07.github.io/connect4.gg/" target="_main">Visit
+                            Connect 4 <i class="fa-solid fa-up-right-from-square"></i></a></section>
+                    <section class="projectInfo">A responsive web adaptation of the classic Connect 4 strategy game
+                        built with HTML, CSS, and JavaScript. It features interactive game logic, real-time win
+                        detection, and a clean, user-friendly interface.</section>
                 </div>
-                <div class="project">Connect4 - Board Game<br><br>
-                    <a href="https://ajitm07.github.io/connect4.gg/" target="_main">Visit Connect4</a>
-                    <br><br>
-                    <a href="https://github.com/AjitM07/connect4.gg.git" target="_main" id="git">Visit Github</a>
+                <div class="projectcard"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('sneakheadImg.png');">
+                    <section class="projectheader">Sneakhead.com</section>
+                    <section class="github_link"><a href="https://github.com/AjitM07/sneakhead.com.git"
+                            target="_main">View Github Repository <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </section>
+                    <section class="live_link"><a href="https://ajitm07.github.io/sneakhead.com/" target="_main">Visit
+                            Sneakhead.com <i class="fa-solid fa-up-right-from-square"></i></a></section>
+                    <section class="projectInfo">A responsive e-commerce sneaker store built with HTML, CSS, and
+                        JavaScript. It has product rendering and functional shopping cart, demonstrating interactive
+                        frontend logic and state management without backend dependencies.</section>
                 </div>
-                <div class="project">SneakHead - Online Shoe Store<br><br>
-                    <a href="https://ajitm07.github.io/sneakhead.com/" target="_main">Visit SneakHead</a>
-                    <br><br>
-                    <a href="https://github.com/AjitM07/sneakhead.com.git" id="git" target="_main">Visit Github</a>
+                <div class="projectcard"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('weather_predimg.png');">
+                    <section class="projectheader">Weather Predictor - Python</section>
+                    <section class="github_link"><a href="https://github.com/AjitM07/weather_pred_python.git/"
+                            target="_main">View Github Repository <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </section>
+                    <section class="live_link"><a href="#" target="_main">-</a></section>
+                    <section class="projectInfo">A data analysis tool utilizing Pandas and NumPy to process historical
+                        weather datasets. It leverages Matplotlib to visualize climate trends and generate statistical
+                        forecasts based on past data patterns.</section>
                 </div>
-                <div class="project">ToDoList Site<br><br>
-                    <a href="https://ajitm07.github.io/todolist/" target="_main">Visit To-Do List</a>
-                    <br><br>
-                    <a href="https://github.com/AjitM07/todolist.git" id="git" target="_main">Visit Github</a>
+                <div class="projectcard"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('todolistImg.png');">
+                    <section class="projectheader">To-Do List</section>
+                    <section class="github_link"><a href="https://github.com/AjitM07/todolist.git" target="_main">View
+                            Github Repository <i class="fa-solid fa-up-right-from-square"></i></a></section>
+                    <section class="live_link"><a href="https://ajitm07.github.io/todolist/" target="_main">Visit To-Do
+                            List <i class="fa-solid fa-up-right-from-square"></i></a></section>
+                    <section class="projectInfo">A minimalist task manager built using HTML, CSS, and JavaScript. It
+                        enables users to efficiently add, delete, and mark tasks as complete, featuring persistent data
+                        storage via local browser memory.</section>
                 </div>
-                <div class="project">Movie Recommendation Website<br><br>
-                    <a href="https://ajitm07.github.io/cinephileschoice.com/" target="_main">Visit Cinephile's
-                        Choice</a>
-                    <br><br>
-                    <a href="https://github.com/AjitM07/cinephileschoice.com.git" id="git" target="_main">Visit
-                        Github</a>
+                <div class="projectcard"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('moviewebsite.png');">
+                    <section class="projectheader">Movie Recommendation Website</section>
+                    <section class="github_link"><a href="https://github.com/AjitM07/cinephileschoice.com.git"
+                            target="_main">View Github Repository <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </section>
+                    <section class="live_link"><a href="https://ajitm07.github.io/cinephileschoice.com/"
+                            target="_main">Visit Cinephile's Choice <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </section>
+                    <section class="projectInfo">A responsive movie discovery platform built with HTML, CSS, and
+                        JavaScript. It features dynamic search and genre filtering, utilizing a custom grid layout that
+                        transitions to a touch-friendly horizontal scroll on mobile devices.</section>
                 </div>
-                <div class="project">Calculate - Calculator Using HTML/CSS/JS<br><br>
-                    <a href="https://ajitm07.github.io/calculate/" target="_main">Visit Calculate</a>
-                    <br><br>
-                    <a href="https://github.com/AjitM07/calculate.git" id="git" target="_main">Visit Github</a>
-                </div>
+            </div>
 
             </div>
         </section>
 
         <br><br>
+
+        <!--Work Experience section-->
         <section class="experience" id="experience">
             <h2 class="tags">Work Experience</h2>
             <div class="expcontainter">
                 <div class="SOFTA">
+
                     <section class="post">Joint Web Developer & Editor</section>
+                    <hr>
                     <section class="place"><a href="https://www.softa.org.in/" target="main">SOFTA Club, Walchand
                             College of Engineering, Sangli</a></section>
                     <section class="tenure">August 2025 - Present</section>
@@ -135,7 +186,8 @@
                         Contributed to designing and developing SOFTA’s official digital platforms, creating responsive
                         UI components, improving user experience, and ensuring smooth functionality across events.
                         Collaborated with the team to maintain and update website content, implement new features, and
-                        support tech-related club activities. <br><br>Contribute to writing, editing, and refining content
+                        support tech-related club activities. <br><br>Contribute to writing, editing, and refining
+                        content
                         for SOFTA’s official announcements, newsletters, event posts, and documentation. Ensure clarity,
                         consistency, and high-quality communication across all platforms while supporting the club’s
                         editorial initiatives.
@@ -144,6 +196,7 @@
 
                 <div class="InternPE">
                     <section class="post">Web Development Intern</section>
+                    <hr>
                     <section class="place"><a href="https://internpe.in/" target="main">InternPe - IT & Training
                             Company</a></section>
                     <section class="tenure">May 2025 - June 2025</section>
@@ -154,9 +207,11 @@
                         Built responsive front-end projects like a to-do list, calculator, e-commerce site, and an
                         interactive game as a part of this internship.
                     </section>
+
                 </div>
                 <div class="SOFTA">
                     <section class="post">Assistant Editor</section>
+                    <hr>
                     <section class="place"><a href="https://www.softa.org.in/" target="main">SOFTA Club, Walchand
                             College of Engineering, Sangli</a></section>
                     <section class="tenure">September 2024 - Present</section>
@@ -173,54 +228,73 @@
 
         <br><br>
 
+        <!--Skills section-->
         <section class="skills" id="skills">
             <h2 class="tags">Skills</h2>
-            <ul class="skills-list">
-                <li>C++</li>
-                <li>Java</li>
-                <li>OOPs</li>
-                <li>C Programming</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Canva</li>
-            </ul>
+            <div class="skills-list">
+                <div class="skill_logo" style="background-image: url('c.png');">
+                </div>
+                <div class="skill_logo" style="background-image: url('java.png');">
+                </div>
+                <div class="skill_logo" style="background-image: url('c_lang.png');">
+                </div>
+                <div class="skill_logo" style="background-image: url('oop.png');">
+                </div>
+                <div class="skill_logo" style="background-image: url('html.png');">
+                </div>
+                <div class="skill_logo" style="background-image: url('css.png');">
+                </div>
+                <div class="skill_logo" style="background-image: url('javascript.png');">
+                </div>
+                <div class="skill_logo" style="background-image:url('canvalogo.png');">
+                </div>
+            </div>
         </section>
 
 
-        <br><br>
+        <br><br><br>
 
-
+        <!--Certificate section-->
         <section class="certifications" id="certifications">
             <h2 class="tags">Certifications</h2>
+            <br>
             <div class="certificatecontainer">
-                <div class="certification">
+                <div class="certification"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('gdg.png');">
                     <a href="gdgcloud.pdf" target="_main" view>Google Developers Group Cloud Campaign Certificate</a>
                 </div>
-                <div class="certification">
+                <div class="certification"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('techumen25.png');">
                     <a href="techumen2025.pdf" target="_main" view>Techumen 2k25 Participation Certificate</a>
                 </div>
-                <div class="certification">
+                <div class="certification"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('nptel.png');">
                     <a href="npteliie.pdf" target="_main" view>NPTEL Understanding Innovation and Entrepreurship
                         Certificate</a>
                 </div>
-                <div class="certification">
+                <div class="certification"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('internpecert.png');">
                     <a href="internpe.png" target="_main" view>Web Development Internship Certificate</a>
                 </div>
-                <div class="certification">
+                <div class="certification"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('tutedude.png');">
                     <a href="tutedudehack.pdf" target="_main" view>Tutedude Web Development Hackathon Certificate</a>
                 </div>
-                <div class="certification">
+                <div class="certification"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('lupython.png');">
                     <a href="letsupgradepython.png" view>ZerotoPythonHero - Let's Upgrade</a>
                 </div>
-                <div class="certification">
+                <div class="certification"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('luhtmlcss.png');">
                     <a href="htmlcssbootcamp.pdf" view>HTML CSS Bootcamp - Let's Upgrade</a>
                 </div>
-                <div class="certification">
+                <div class="certification"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('nielitcert.png');">
                     <a href="nielit.jpg" target="_main" view>Course On Computer Concepts</a>
                 </div>
-                <div class="certification">
-                    <a href="newtech.jpg" target="_main" view>MS Office - Word/Excel/PowerPoint</a>
+                <div class="certification"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('newtechcert.png');">
+                    <a href="newtech.jpg" target="_main" view>MS Office - Word/ Excel/ PowerPoint</a>
                 </div>
             </div>
         </section>
@@ -228,13 +302,27 @@
         <br><br>
 
 
+        <!--Blog Section-->
         <section id="blogs">
             <h2 class="tags">Blogs</h2>
             <div class="blogcontainer">
 
 
                 <div class="blog-post">
+                    <h3>Enhancing My Portfolio</h3>
+                    <hr>
+                    <p class="blog-date">December 04, 2025</p>
+                    <p class="blog-summary">
+                        As a front-end developer, I always knew I needed a space to represent myself online — a
+                        portfolio that reflected not just my work, but my style. So, I finally sat down and started
+                        building this site using pure HTML, CSS, and JavaScript. This portfolio isn't just a site — it’s
+                        my digital identity. And this is just the beginning.
+                    </p>
+                </div>
+
+                <div class="blog-post">
                     <h3>Participation in Techumen 2k25</h3>
+                    <hr>
                     <p class="blog-date">11 October, 2025</p>
                     <p class="blog-summary">
                         Proud to have participated in CodeBlast, the competitive programming contest at Techumen 2K25,
@@ -249,9 +337,9 @@
                     </p>
                 </div>
 
-
                 <div class="blog-post">
                     <h3>Web Development Internship at InternPe</h3>
+                    <hr>
                     <p class="blog-date">22 June, 2025</p>
                     <p class="blog-summary">
                         In May–June 2025, I completed a Web Development Internship at InternPe, where I gained practical
@@ -267,6 +355,7 @@
 
                 <div class="blog-post">
                     <h3>Connect 4 Game – Built with HTML, CSS & JavaScript</h3>
+                    <hr>
                     <p class="blog-date">June 15, 2025</p>
                     <p class="blog-summary">
                         I developed a web version of the classic Connect 4 game using HTML, CSS, and JavaScript,
@@ -277,32 +366,8 @@
                 </div>
 
                 <div class="blog-post">
-                    <h3>Sneakhead: A Responsive Sneaker Store</h3>
-                    <p class="blog-date">June 6, 2025</p>
-                    <p class="blog-summary">
-                        As part of my internship, I developed Sneakhead, a modern, dark-themed e-commerce website built
-                        using HTML, CSS, and JavaScript. The goal was to create a clean and responsive user interface
-                        that works smoothly across all devices. I’m proud of what I built — and excited to keep growing
-                        from here.
-                    </p>
-                </div>
-
-
-                <div class="blog-post">
-                    <h3>Building My Own Portfolio</h3>
-                    <p class="blog-date">May 19, 2025</p>
-                    <p class="blog-summary">
-                        As a front-end developer, I always knew I needed a space to represent myself online — a
-                        portfolio that reflected not just my work, but my style. So, I finally sat down and started
-                        building this site using pure HTML, CSS, and JavaScript. This portfolio isn't just a site — it’s
-                        my digital identity. And this is just the beginning.
-                    </p>
-                </div>
-
-
-
-                <div class="blog-post">
                     <h3>Getting Started with Front-End Development</h3>
+                    <hr>
                     <p class="blog-date">March 10, 2025</p>
                     <p class="blog-summary">
                         Front-end development is the gateway to building visually appealing and interactive websites. In
@@ -327,14 +392,17 @@
         </div>
         </section>
     </main>
+
     <hr>
+
+    <!--Footer section-->
     <footer class="footer">
         <div class="footer-content">
             <h3>Ajit Mangsulikar</h3>
-            <p>Front-End Developer | Portfolio Website</p>
+            <p>SY CSE Undergraduate | Portfolio Website</p>
         </div>
         <div>
-            <p class="footer-bottom">© 2025 Ajit Mangsulikar. All rights reserved.</p>
+            <p class="footer-bottom">© 2025 Ajit Mangsulikar - All rights reserved.</p>
             <a href="https://github.com/AjitM07" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/ajitmangsulikar/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="ajitmangsulikar123@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -346,4 +414,3 @@
 </body>
 
 </html>
-

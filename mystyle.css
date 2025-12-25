@@ -328,7 +328,7 @@ ul a:hover {
 
 /*Experience Container*/
 .expcontainter {
-  width: 80%;
+  width: 70%;
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -640,4 +640,5 @@ form button:hover {
 .popup .btn:hover {
   transform: scale(1.08);
 }
+
 
